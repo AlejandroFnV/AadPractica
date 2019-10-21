@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btMostrar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btGuardar"
+        app:layout_constraintBottom_toTopOf="@+id/btExportar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNombre" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="@string/etNombre"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rgTipo" />
+
+    <Button
+        android:id="@+id/btExportar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/btExportar"
+        app:layout_constraintBottom_toTopOf="@+id/btEscribir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btMostrar" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/btEscribir">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvLista"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tvLista" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RadioGroup
+        android:id="@+id/rgTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rbPrivado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbPrivado" />
+
+        <RadioButton
+            android:id="@+id/rbInterno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rbInterno" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btEscribir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btEscribir"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btExportar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

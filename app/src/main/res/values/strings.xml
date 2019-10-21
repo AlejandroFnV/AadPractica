@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">Práctica de Acceso a Datos</string>
+
+    <string name="mnRecordar">Recordar archivo</string>
+    <string name="mnSettings">Ajustes</string>
+
+    <string name="btGuardar">Mostrar contactos</string>
+    <string name="etNombre">Nombre del archivo:</string>
+    <string name="btExportar">Exportar en CSV</string>
+    <string name="tvLista">Contactos:</string>
+    <string name="rbInterno">Interno</string>
+    <string name="rbPrivado">Privado</string>
+    <string name="btEscribir">Escribir contactos</string>
+
+    <string name="escribir">Escribir</string>
+    <string name="tituloExplicacion">Warning</string>
+    <string name="mensajeExplicacion">Lo necesito</string>
+    <string name="tituloExplicacion2">Lo necesito</string>
+    <string name="mensajeExplicacion2">Lo necesito</string>
+    <string name="respSi">Sí</string>
+
+    <string name="razon">Lo necesito!</string>
+    <string name="respNo">No</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="mnUbicacion">Ubicación del archivo</string>
+    <string name="title_activity_recordar_archivo_settings">Settings</string>
+    <string name="title_activity_ubicacion_settings">Settings</string>
+
+</resources>
